@@ -9,3 +9,27 @@ NebulaFlowは、コーディングをアナーキーなブラックホールで�
 # 参考文献
 
 [SonarQube Docs](https://docs.sonarsource.com/sonarqube/latest/)
+
+# Common Setting
+
+## ネットワーク作成
+
+```
+[実行コマンド]
+docker network create --subnet=172.10.10.0/24 --gateway=172.10.10.1 nebula_net
+
+[確認コマンド]
+docker network list
+```
+
+## Volume作成
+
+```
+[実行コマンド]
+docker volume create nebula_vol
+
+[確認コマンド]
+docker volume list
+
+[結果]
+```
