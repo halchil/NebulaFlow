@@ -1,1 +1,22 @@
-version: 3
+version: '3.8'
+
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    networks:
+      - nebula_net
+    volumes:
+      - nebula_vol:/var/jenkins_home
+    restart: always
+
+networks:
+  nebula_net:
+    external: true
+
+volumes:
+  nebula_vol:
+    external: true
