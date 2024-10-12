@@ -27,6 +27,9 @@ docker network list
 ```
 [実行コマンド]
 docker volume create nebula_vol
+docker volume create gitlab_config
+docker volume create gitlab_logs
+docker volume create gitlab_data
 
 [確認コマンド]
 docker volume list
