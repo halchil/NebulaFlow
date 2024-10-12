@@ -23,7 +23,7 @@ networks:
     external: true
 
 volumes:
-   gitlab_config:
+  gitlab_config:
     external: true
   gitlab_logs:
     external: true
